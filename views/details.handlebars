@@ -1,0 +1,27 @@
+{{> header}}
+<div class="container" style="padding-bottom: 363px;">
+<h1 class="text-center mt-3" style="color: rgb(125, 140, 153);">Details</h1>
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+        </tr>
+    </thead>
+    {{#each info}}
+    <tbody>
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.password}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.city}}</td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>
+</div>
+{{> footer}}
